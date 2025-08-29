@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Profolio </title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .container-fluids{
+        width: 100%;
+    }
+
+
+    /* From Uiverse.io by bhaveshxrawat */ 
+.card {
+  width: 500px;
+  height: 560px;
+  margin: auto;
+  /* background: #07182E; */
+  background-image: url(https://scontent.fpnh2-2.fna.fbcdn.net/v/t39.30808-6/481190517_1172762821187220_3341195592931429518_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFkzWO69srQLi31PHR23iFJAg1rCDKsV3sCDWsIMqxXe8ECxyvDgXFkS3KYbKJZhM_yv7QPWurJRM0mAlQ6mQpE&_nc_ohc=bqNWVHbHGZcQ7kNvwExgLkv&_nc_oc=AdnryBd5vsGzJRbQvFhpKlHNub1BLtxLQaz9TXwRU420j2vhPoyesRpPK3Y5Uby3DvM&_nc_zt=23&_nc_ht=scontent.fpnh2-2.fna&_nc_gid=RJ3Q_F8xBkUfA3uJ6jVF1g&oh=00_AfL841zxlCstMdqtMx2WIjebJyXRTOirk9qiJmOmn5DSvA&oe=682FCAC5);
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* .card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+} */
+
+/* .card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+} */
+
+/* @keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}   */
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+
+
+    /* From Uiverse.io by jeremyssocial */ 
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+  45%,
+  55% {
+    width: 6.2em;
+  } /* adjust width based on content */
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  border: 0.1em solid #333;
+  background-color: #1a1a1a;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  padding: 1.5em 1em;
+  width: 12em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 250px;
+}
+
+.terminal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  background-color: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0 0.4em;
+  box-sizing: border-box;
+}
+
+.terminal-controls {
+  float: right;
+}
+
+.control {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  float: left;
+  line-height: 1.5em;
+  color: #eee;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green; /* Cursor */
+  animation:
+    typeAndDelete 4s steps(11) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  margin-top: 1.5em;
+}
+#img{
+    border-radius: 800px 100px;
+}
+
+</style>
+<body>
+    <div class="container-fluids">
+        <div class="header d-flex  justify-content-between bg-white shadow p-4">
+            <h4><font style="color: green;">H</font> <font style="color: rgb(250, 21, 128);">O</font><font style="color: rgb(0, 0, 0);">R</font><font style="color: rgb(255, 241, 50);">N</font><font style="color: rgb(0, 0, 0);">S</font><font style="color: rgb(75, 108, 255);">EY</font>HA=>Software Developer !</h4>
+            <ul class="d-flex gap-lg-5 list-unstyled ">
+                <li class="nav-item"><a class="text-decoration-none list-group-item list-group-item-action" href="#">HOME</a></li>
+                <li class="nav-item"><a class="text-decoration-none list-group-item list-group-item-action " href="#">ABOUT ME</a></li>
+                <li class="nav-item"><a class="text-decoration-none list-group-item list-group-item-action" href="#">CONTACT</a></li>
+                <li class="nav-item"><a class="text-decoration-none list-group-item list-group-item-action" href="#">PHOTO</a></li>
+                <li class="nav-item"><i  class="bi bi-blockquote-right list-group-item list-group-item-action"></i></li>
+            </ul>
+        </div>
+
+        <div class="information w-100 d-flex p-5">
+            <div class="card ">
+                <!-- <img class=" shadow" id="img" src=" " alt=""> -->
+                 
+                        <img src="https://scontent.fpnh2-2.fna.fbcdn.net/v/t39.30808-6/481190517_1172762821187220_3341195592931429518_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFkzWO69srQLi31PHR23iFJAg1rCDKsV3sCDWsIMqxXe8ECxyvDgXFkS3KYbKJZhM_yv7QPWurJRM0mAlQ6mQpE&_nc_ohc=bqNWVHbHGZcQ7kNvwExgLkv&_nc_oc=AdnryBd5vsGzJRbQvFhpKlHNub1BLtxLQaz9TXwRU420j2vhPoyesRpPK3Y5Uby3DvM&_nc_zt=23&_nc_ht=scontent.fpnh2-2.fna&_nc_gid=RJ3Q_F8xBkUfA3uJ6jVF1g&oh=00_AfL841zxlCstMdqtMx2WIjebJyXRTOirk9qiJmOmn5DSvA&oe=682FCAC5" alt="">
+             
+            </div>
+            <div class="rigth w-50  d-flex flex-column justify-content-center text-center">
+                <div class="terminal-loader">
+                        <div class="terminal-header">
+                            <div class="terminal-title">Status Me</div>
+                            <div class="terminal-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            </div>
+                        </div>
+                        <div class="text">I`m Single.....</div>
+                        </div>
+                
+                 <button class="btn btn-primary"></button>
+                <h5 class="fs-1">My <font style="color: blue;">Profolio </font>, and  I want to be a Software developer <font style="color: red;">!</font> </h5>
+                <p><span id="typed"></span> </p> 
+                
+                  <div class="btn">
+                    <button class="btn btn-warning w-25">Explore Now</button>
+                 <button class="btn btn-info w-25">Explore Now</button>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+  <!-- Element to contain animated typing -->
+<script>
+  const typed = new Typed("#typed", {
+    strings: ["Hello, Everyone!", "Welcome to my website!", "Enjoy your stay!","And I am developer!"],
+    typeSpeed: 50,         // typing speed
+    backSpeed: 25,         // backspacing speed
+    backDelay: 1000,       // delay before backspacing
+    loop: true             // repeat animation
+  });
+</script>
